@@ -1,0 +1,17 @@
+{
+  "host": "127.0.0.1",
+  "port": 8890,
+  "fuzzy": 0.5,
+  "xxy_open_id": "",
+  "llm_enabled": false,
+  "llm_provider": "deepseek",
+  "llm_base": "",
+  "llm_key": "",
+  "llm_model": "",
+  "llm_cache": true,
+  "llm_first": false,
+  "llm_fallback": true,
+  "llm_profiles": {},
+  "cdp_timeout": 90,
+  "cdp_new_chat": false
+}
