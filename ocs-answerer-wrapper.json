@@ -1,0 +1,23 @@
+[
+  {
+    "name": "本地题库(8890)",
+    "homepage": "http://127.0.0.1:8890/",
+    "url": "http://127.0.0.1:8890/ocs",
+    "method": "post",
+    "contentType": "json",
+    "type": "GM_xmlhttpRequest",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "data": {
+      "title": "${title}",
+      "options": {
+        "handler": "return (env)=> (env.options || '').split('\\n').filter(Boolean)"
+      },
+      "type": {
+        "handler": "return (env)=> env.type || ''"
+      }
+    },
+    "handler": "return (res) => { if (!res || res.code !== 1 || !res.answer) return undefined; return [res.question || undefined, res.answer];}"
+  }
+]
