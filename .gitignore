@@ -1,0 +1,28 @@
+# ---- 不上传的东西 ----
+__pycache__/
+*.py[cod]
+*.log
+_package/
+_verify/
+build/
+_scan/
+*.spec
+_pyz_check.pyz
+
+# 本地运行数据（题库本身是示例，但日志和备份不进仓库）
+query.log
+run.out.log
+run.err.log
+run2.out.log
+run2.err.log
+*.bak-ocs
+
+# 真实配置（可能含 key）
+config.json
+
+# 开发者的临时探针
+gh_*.py
+
+# 系统
+.DS_Store
+Thumbs.db
